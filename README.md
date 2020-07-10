@@ -1,2 +1,12 @@
 # style2inline
-Convert style element to inline style
+
+html内のstyle要素をinline化するツール
+
+## 目的
+管理者が別のためサイト全体のclassやidの全容が不明のため,極力inlineでスタイルを設定するという環境下で、少しでもスタイルの使いまわしをしやすくしたい。
+
+## 流れ
+1. htmlファイルを読み込む
+2. スタイル要素を解析する
+3. 本文の各要素にinlineで適用する
+4. htmlファイルを書き出す
