@@ -1,0 +1,32 @@
+name: style2inline
+version: "0.0"
+author: fluo10 <fluo10+git@fireturtle.net>
+about: ""
+args:
+    - INPUT:
+        help: Sets the input file to use
+        index: 1
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity
+    - element:
+        short: e
+        long: element
+        help: Sets the target element
+        value_name: ELEMENT
+        takes_value(true)
+    - id:
+        short: i
+        long: id
+        help: Sets the target id
+        takes_value(true)
+        value_name: id
+subcommands:
+    - export:
+        about: controls testing features
+        args:
+            - OUTPUT:
+                help: Sets the path to output file
+                index: 2
+                
