@@ -1,26 +1,65 @@
-# style2inline
+# style2inline README
 
-html内のstyle要素をinline化するツール
+This is the README for your extension "style2inline". After writing up a brief description, we recommend including the following sections.
 
-## 目的
-管理者が別のためサイト全体のclassやidの全容が不明であり、それゆえ極力inlineでスタイルを設定するという環境下で、少しでもスタイルの使いまわしをしやすくしたい。
+## Features
 
-## 処理の流れ
-1. htmlファイルを読み込む
-2. スタイル要素を解析する
-3. 本文の各要素にinlineで適用する
-4. htmlファイルを書き出す
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-## 決めること:形式
-目的の処理を使いやすく実行するために、どのような形式にするか
-とりあえず以下の二つを当面は両方並行して試してみる
-###  vscode extention
-編集中のHTMLを直接変換しクリップボードに入れる。
-中間ファイルの作成が必要ないため実現できれば使いやすい
-Node.jsではないが、javascript自体は職場でも使うので、他の人に引き継いだりもしやすいかもしれない
-VSCodeを使っていない人には共有できないのでそこはデメリットか
+For example if there is an image subfolder under your extension project workspace:
 
-### 実行ファイル（rust製)
-1ファイルにできるので共有はしやすい。
-業務では間違いなく使わないので評価にはつながらないし、メンテを引き継いでもらうことも難しい。
-単純に個人的にRustに興味があり、モチベーション的にはむしろこっちのほうが高い。
+\!\[feature X\]\(images/feature-x.png\)
+
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+
+## Requirements
+
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+
+## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
+For example:
+
+This extension contributes the following settings:
+
+* `myExtension.enable`: enable/disable this extension
+* `myExtension.thing`: set to `blah` to do something
+
+## Known Issues
+
+Calling out known issues can help limit users opening duplicate issues against your extension.
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 1.0.0
+
+Initial release of ...
+
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+-----------------------------------------------------------------------------------------------------------
+
+## Working with Markdown
+
+**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+
+### For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
